@@ -1,0 +1,19 @@
+<html>
+<head>
+<title>FUEL PRICE PREDICTION</title>
+</head>
+<body bgcolor="aqua">  
+
+<div class="login">
+       <h2><marquee behavior="alternate" direction="left"  bgcolor="skyblue"><font color="black">FUEL PRICE PREDICTION</font></marquee></h2>
+    <form action="{{url_for('predict')}}"method="post">
+        <input type="text" name="drivenKM" placeholder="drivenKM" requeried="requeried"> <br><br><br>
+        <button type="submit" class+"btn btn-primary btn-block btn-large">predict</button>
+   </form>
+  <br>
+  <br>
+  {{ prediction_text }}
+</div>
+
+</body>
+</html>
